@@ -18,7 +18,11 @@ search.addEventListener('click',async()=>{
 
     let data = await fetch(url).then((res)=>{
         if(res.status !="200"){
-            container.style.height="480px"
+            if(screen.width > 768){
+                container.style.height="480px"
+            }else{
+                container.style.height="400px"
+            }
             weatherBox.style.display = 'none';
             weatherDetails.style.display = 'none';
             error404.style.display = 'block';
@@ -51,6 +55,8 @@ function Temperatures(Te,Hu,Sp,Des,Img){
 
     if(screen.width > 768){
         container.style.height="550px"
+    }else{
+        container.style.height="450px"
     }
 
     imgen.src= ''
@@ -61,7 +67,6 @@ function Temperatures(Te,Hu,Sp,Des,Img){
     description.innerHTML= Des;
 
     error404.style.display ='none'
-    container.style.height="400px"
     weatherBox.style.display = '';
     weatherDetails.style.display = '';
     weatherBox.classList.add('fadeIn');

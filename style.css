@@ -17,7 +17,9 @@ main{
     align-items: center;
     justify-content: center;
 }
+
 /* style del contenido del reloj */
+
 .container-reloj{
     text-align: center;
     color: #fff;
@@ -188,9 +190,31 @@ main{
 
 
 @media screen and (max-width:768px) {
+/* style del contenido del reloj */
+    .container-reloj{
+        width: 350px;
+        margin-bottom: 5px;
+        padding: 8px 0;
+    }
+    .container-reloj h2{
+        margin-bottom: 2px;
+    }
+    .container-reloj >div{
+        gap:2px ;
+    }
+    .container-reloj p,
+    .container-reloj span{
+        font-size: 24px;
+    }
+    .container-reloj div div p{
+        font-size: 12px;
+    }
+
+    
+/* Style de contenido del clima */
     .container{
         width:350px;
-        height: 80px;
+        height: 400px;
         padding: 20px 24px;
         border-radius: 10px;
     }
