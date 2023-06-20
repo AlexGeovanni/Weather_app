@@ -210,11 +210,10 @@ main{
         font-size: 12px;
     }
 
-    
-/* Style de contenido del clima */
+    /* style del contenido del weather*/
     .container{
         width:350px;
-        height: 400px;
+        height: 80px;
         padding: 20px 24px;
         border-radius: 10px;
     }
