@@ -3,6 +3,7 @@ const hour = document.querySelector(".container-reloj div .hour ")
 const minute = document.querySelector(".container-reloj div .minute ")
 const second = document.querySelector(".container-reloj div .second ")
 const PmAm  =document.querySelector(".PmAm")
+
 const timeReloj =()=>{
     const horario = new Date();
     const h = horario.getHours();

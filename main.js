@@ -7,14 +7,14 @@ const error404 = document.querySelector('.not-found');
 
 // consulta es a traves de una api de clima, modo de la consulta es de paises.
 search.addEventListener('click',async()=>{
-    const APIKEY = '3205aec08bf6921991d13ff48c3859ed';
+    const APIK = '3205aec08bf6921991d13ff48c3859ed';
     const city = document.querySelector('.search-box input').value;
     if(city==''){
         return
         // https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=3205aec08bf6921991d13ff48c3859ed
 
     }
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIK}`;
 
     let data = await fetch(url).then((res)=>{
         if(res.status !="200"){
